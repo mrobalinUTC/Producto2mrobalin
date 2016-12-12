@@ -1,0 +1,28 @@
+@(comidas: java.util.List[Comida])
+<html>
+<head>
+</head>
+<body>
+<table border=1>
+	<tr>
+		<td>Id</td>
+		<td>Comida</td>
+		<td>Precio</td>
+		<td>Ingrediente</td>
+		
+	</tr>
+	@for(comida <- comidas){
+	<tr>
+		<td>@comida.id</td>
+		<td>@comida.name</td>
+		<td>@comida.precio</td>
+		<td>@comida.ingrediente</td>
+	</tr>
+	}
+	
+	
+	
+	</table>
+
+</body>
+</html>
